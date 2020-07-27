@@ -1,0 +1,126 @@
+@import "_null";
+
+
+$color-bg: #e8e8e8;
+$color-ft: #273d46;
+body{
+	background-color: $color-bg;
+	
+}
+.wrapper{
+	max-width: 841px;
+	margin: 0 auto;
+	padding: 0 0 137px 0;
+}
+.content-top{
+	text-align: center;
+	margin: 0 0 65px 0;
+	&__heading{
+		text-transform: uppercase;
+		color: #878f92;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		letter-spacing: 2.8px;
+		margin: 168px 0 0 0;
+		line-height: 40px;
+	}
+	&__title{
+		color: $color-ft;
+		font-size: 36px;
+		line-height: 50px;
+		max-width: 761.55px;
+		margin: 0 auto;
+	}
+}
+
+.content-img{
+	text-align: center;
+	&__item{
+		border: 10px solid #fff;
+		box-shadow: 15px 0 65px rgba(15, 16, 16, 0.15);
+	}
+	margin: 0 0 87px 0;
+}
+
+.content-bottom{
+	width: 749px;
+	margin: 0 auto;
+	&__text{
+		
+		line-height: 40px;
+		font-size: 24px;
+		color: #80888c;
+		
+		p{
+			margin: 0 0 40px 0;
+		}
+		p:last-child{
+			margin: 0 0 44px 0;
+		}
+	}
+
+	&__list{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		line-height: 30px;
+		margin: 0 0 58px 0;
+		li{
+			padding: 0 0 3.5px 7.5px;
+		}
+		li:nth-child(1){
+			color: $color-ft;
+			text-shadow: 1px 0 0 rgba(0, 0, 0, 0.3);
+		}
+		li:nth-child(2){
+			font-style: italic;
+			color: #80b7b3;
+		}
+		li:nth-child(3){
+			color: $color-ft;
+			font-weight: 600;
+		}
+		li:nth-child(4){
+			text-decoration: line-through;
+			color: #bbbebf;
+		}
+
+		li:before{
+			content: "";
+			background: url("../img/icons/check.png") no-repeat;
+			position: relative;
+			top: 3px;
+			left: -12px;
+			width: 25px;
+			height: 19px;
+			display: inline-block;
+		}
+		
+	}
+
+	&__link{
+		text-transform: uppercase;
+		color: #fff;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		letter-spacing: 2.8px;
+		background-color: #80b7b3;
+		display: inline-block;
+		height: 43px;
+		line-height: 43px;
+		padding: 0 27px;
+		border-radius: 24px;
+		box-shadow: 6px 0 40px rgba(128, 183, 179, 0.54);
+
+		span:after{
+			background: url("../img/icons/arrow.png") no-repeat;
+			display: inline-block;
+			content: "";
+			position: relative;
+			left: 9px;
+			top: 0;
+			width: 22px;
+			height: 13px;
+			padding: 0 15px;
+		}
+	}
+}
